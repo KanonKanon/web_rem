@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:20px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./js/set_root.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        $(function(){
+            var mySwiper = new Swiper ('.swiper-container', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+                autoplay:true, 
+
+                autoplay: {
+                    disableOnInteraction: false,
+                },
+                // 如果需要分页器
+                pagination: {
+                el: '.swiper-pagination',
+                },
+                
+                // 如果需要前进后退按钮
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                
+            })        
+        });
+        //把右侧滚动条隐藏。
+        $(function(){
+            var nicesx = $(".main_wrap").niceScroll(".center_con", {
+					touchbehavior: true,
+					cursorcolor: "#FF00FF",
+					cursoropacitymax: 0,
+					cursorwidth: 24,
+					usetransition: true,
+					hwacceleration: true,
+					autohidemode: "hidden"
+                });
+        });
+        //刷新页面一次。
+        $(function(){
+            setTimeout(function(){
+                if($.cookie("reflesh")!="no")
+                {
+                    window.location.reload();
+                    $.cookie("reflesh","no");
+                }
+            },5000);
+        }); 
+       
+    </script>
+        
+    <title>天天生鲜移动端主页</title>
+</head>
+<body>
+    <div class="main_wrap clearfix">
+        <div class="header_con clearfix">
+            <a href="#"><img src="./images/logo.png" alt="天天生鲜-Logo"></a>
+            <a href="#"></a>
+        </div>
+
+        <div class="center_con clearfix">
+           
+            <div class="slide">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="./images/banner.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/banner.png" alt=""></a></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+                <!-- <a href="#"><img src="./images/banner.png" alt="幻灯片"></a> -->
+            </div>
+            <div class="menu_con clearfix">
+                <ul class="menu clearfix">
+                    <li>
+                        <a href="#"></a>
+                        <h2>水果</h2>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <h2>海鲜</h2>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <h2>肉类</h2>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <h2>禽蛋</h2>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <h2>蔬菜</h2>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <h2>速冻</h2>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <h2>热卖</h2>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <h2>新品</h2>
+                    </li>
+                </ul> 
+            </div>
+
+            <div class="common_model_con clearfix">
+                <div class="common_model clearfix">
+                    <div class="common_title clearfix">
+                        <h2>新鲜水果</h2>
+                        <a href="#" class="more">更多 &gt;</a>
+                    </div>
+                    <a href="#" class="banner_pic"><img src="./images/banner02.jpg" alt=""></a>
+                    <ul class="goods_list_con clearfix">
+                        <li class="clearfix">
+                            <a href="#" class="goods_pic"><img src="./images/goods01.jpg" alt="商品图"></a> 
+                            <h3 class="goods_title">新西兰皇家红富士</h3>
+                            <span class="goods_count">12/提</span>
+                            <span class="goods_price">￥68.00</span>
+                            <a href="#" class="goods_chart"><img src="./images/plus.jpg" alt="plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="goods_pic"><img src="./images/goods01.jpg" alt="商品图"></a> 
+                            <h3 class="goods_title">新西兰皇家红富士</h3>
+                            <span class="goods_count">12/提</span>
+                            <span class="goods_price">￥68.00</span>
+                            <a href="#" class="goods_chart"><img src="./images/plus.jpg" alt="plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="goods_pic"><img src="./images/goods01.jpg" alt="商品图"></a> 
+                            <h3 class="goods_title">新西兰皇家红富士</h3>
+                            <span class="goods_count">12/提</span>
+                            <span class="goods_price">￥68.00</span>
+                            <a href="#" class="goods_chart"><img src="./images/plus.jpg" alt="plus"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="common_model_con clearfix">
+                <div class="common_model clearfix">
+                    <div class="common_title clearfix">
+                        <h2>新鲜水果</h2>
+                        <a href="#" class="more">更多 &gt;</a>
+                    </div>
+                    <a href="#" class="banner_pic"><img src="./images/banner02.jpg" alt=""></a>
+                    <ul class="goods_list_con clearfix">
+                        <li class="clearfix">
+                            <a href="#" class="goods_pic"><img src="./images/goods01.jpg" alt="商品图"></a> 
+                            <h3 class="goods_title">新西兰皇家红富士</h3>
+                            <span class="goods_count">12/提</span>
+                            <span class="goods_price">￥68.00</span>
+                            <a href="#" class="goods_chart"><img src="./images/plus.jpg" alt="plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="goods_pic"><img src="./images/goods01.jpg" alt="商品图"></a> 
+                            <h3 class="goods_title">新西兰皇家红富士</h3>
+                            <span class="goods_count">12/提</span>
+                            <span class="goods_price">￥68.00</span>
+                            <a href="#" class="goods_chart"><img src="./images/plus.jpg" alt="plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="goods_pic"><img src="./images/goods01.jpg" alt="商品图"></a> 
+                            <h3 class="goods_title">新西兰皇家红富士</h3>
+                            <span class="goods_count">12/提</span>
+                            <span class="goods_price">￥68.00</span>
+                            <a href="#" class="goods_chart"><img src="./images/plus.jpg" alt="plus"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+        
+        <div class="footer_con clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div></div>
+                        <h3>首页</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div></div>
+                        <h3>分类</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div></div>
+                        <h3>购物车</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div></div>
+                        <h3>我的</h3>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
+</body>
+</html>

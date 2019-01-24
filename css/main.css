@@ -1,0 +1,308 @@
+*{
+    touch-action: pan-y;
+}
+body{
+   font-family: "Microsoft Yahei" ;
+   color: #666666; 
+   overflow: hidden;
+}
+
+.main_wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.header_con{
+    height: 2.5rem;
+    background-color: #2c9638;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header_con a:nth-child(1){
+    display:block;
+    width: 4.425rem;
+    height: 1.8rem;
+    margin: .375rem auto;
+
+}
+.header_con a:nth-child(1) img{
+    width: 100%;
+}
+.header_con a:nth-child(2){
+    position: absolute;
+    top: .6rem;
+    right: .7rem; 
+    width: 1.375rem;
+    height: 1.375rem;
+    background: url(../images/button-icon.png) 0 0 no-repeat;
+    background-size: 2.5rem 15rem;
+    
+}
+.center_con{
+    position: absolute;
+    top: 2.5rem;
+    bottom: 3.0rem;
+    background-color: #efefef;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.slide a{
+    width: 100%;
+    display: block;
+}
+.slide a img{
+    width: 100%;
+    margin:-1px 0 0 -1px;
+}
+.menu_con{
+    background-color: white;
+    margin-top: .25rem;
+}
+.menu{
+    height: 100%;
+    margin: .875rem  .5rem .3rem .5rem;
+    overflow: hidden;
+    
+}
+.menu_con .menu li{
+    float: left;
+    width: 25%;
+    height: 50%;
+}
+.menu li a{
+    display: block;
+    width: 2.85rem;
+    height: 2.85rem;
+    background: url(../images/link-icon.png) 0 0 no-repeat;
+    background-size: 3.75rem 30rem;
+    margin: 0 auto;
+}
+.menu li:nth-child(2) a{
+    background-position: 0 -3.75rem;
+}
+.menu li:nth-child(3) a{
+    background-position: 0 -7.5rem;
+}
+.menu li:nth-child(4) a{
+    background-position: 0 -11.25rem;
+}
+.menu li:nth-child(5) a{
+    background-position: 0 -15rem;
+}
+.menu li:nth-child(6) a{
+    background-position: 0 -18.75rem;
+}
+.menu li:nth-child(7) a{
+    background-position: 0 -22.5rem;
+}
+.menu li:nth-child(8) a{
+    background-position: 0 -26.25rem;
+}
+
+.menu li h2{
+    text-align: center;
+    height: 1.35rem;
+    font:bold 13px/1.2rem "Microsoft Yahei";
+    
+} 
+.center_con .common_model_con{
+    height: 17.4rem;
+    width: 100%;
+    background-color: white;
+    margin-top: .5rem;
+}
+.common_model{
+    height: 100%;
+    margin: .5rem .5rem 0.5rem .5rem;
+    overflow: hidden;
+}
+.common_model .common_title{
+    height: .9rem;
+    position: relative;
+}
+.common_title h2{
+    border-left: .175rem solid #fec63e;
+    text-indent: .4rem;
+    height: 0.9rem;
+    font:bold 16px/0.9rem "Microsoft Yahei";
+    color: #fec63e;
+}
+.common_title .more{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0.9rem;
+    font: 14px/.9rem "Microsoft Yahei";
+    color: #7d7d7c;
+}
+.common_model .banner_pic{
+    height: 4.5rem;
+    display: block;
+    margin: .5rem auto 0;
+}
+.common_model .banner_pic img{
+    width: 100%;
+    height: 100%;
+}
+.goods_list_con{
+    margin-top: .95rem;
+    height: 10rem;
+    overflow: hidden;
+}
+.goods_list_con li{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    box-sizing: border-box;
+    border-left: 1px dashed #e5e5e4;
+    position: relative;
+}
+.goods_list_con li:first-child{
+    border-left: 0;
+}
+.goods_pic{
+    display:block;
+    width: 4.95rem;
+    height: 4.95rem;
+    margin:0 auto;
+    background-color: gold;
+}
+.goods_pic img{
+    width: 100%;
+}
+.goods_title{
+    display:inline-block;
+    height: .75rem;
+    width: 100%;
+    font: 14px/.75rem  "Microsoft Yahei";
+    color: #645f5d;
+    margin-top: .925rem; 
+    text-indent: .65rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.goods_count{
+    display:inline-block;
+    height: .5rem;
+    width: 100%;
+    font: 12px/.5rem "Microsoft Yahei" ;
+    color: #bdbdbc;
+    margin-top: .8rem;
+    text-indent: .65rem;
+}
+.goods_price{
+    display: inline-block;
+    width: 100%;
+    height: .5rem;
+    font: 12px/.5rem  "Microsoft Yahei";
+    color: #ff510b;
+    margin-top: .4rem;
+    text-indent: .65rem;
+    
+}
+.goods_chart{
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    bottom: 0;
+    right:.75rem;
+
+}
+.goods_chart img{
+    width: 100%;
+}
+
+@media (min-width:380px){
+   .menu_con .menu li h2{
+        font-size: 13px;
+    }
+    .goods_title{
+        font-size: 18px;
+    }
+    .goods_count{
+        font-size: 12px;
+    }
+    .goods_price{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:750px){
+    .goods_title{
+        font-size: 20px;
+    }
+    .goods_count{
+        font-size: 18px;
+    }
+    .goods_price{
+        font-size: 20px;
+    }
+
+   .menu_con .menu li h2{
+        font-size: 20px;
+    }
+
+}
+
+
+
+.footer_con{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    height: 3rem; 
+    width: 100%;
+}
+.footer_con ul:nth-child(1){
+    height: 3rem;
+    width: 100%;
+    margin-top: .7rem; 
+}
+.footer_con ul li{
+    width:25%;
+    height: 100%;
+    float: left;
+}
+.footer_con ul li a{
+    display: block;
+    width: 2.2rem;
+    height: 2rem;
+    margin: 0 auto;
+}
+.footer_con ul li a div:nth-child(1){
+    width: 1.375rem;
+    height: 1.25rem;
+    background: url(../images/button-icon.png) 0 -2.5rem no-repeat;
+    background-size: 2.5rem 15rem; 
+    margin: 0 auto;
+}
+.footer_con ul li:nth-child(2) a div{
+    background-position: 0 -5rem;
+}
+.footer_con ul li:nth-child(3) a div{
+    background-position: 0 -7.5rem;
+}
+.footer_con ul li:nth-child(4) a div{
+    background-position: 0 -10rem;
+}
+
+.footer_con ul li a h3{
+    font: 12px/.470rem "Microsoft Yahei";
+    color: #666666;
+    text-align: center;
+    margin-top: .20rem;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background-size: 17px 44px;
+}
