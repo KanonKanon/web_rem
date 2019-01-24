@@ -4,3 +4,4 @@
 2.自适应各种手机端屏幕，IOS系统，Android系统。  
 3.使用zepto.js,tap事件取代click事件。  
 4.应用swiper.js实现轮播图。  
+5.fluid.apk是用HbuilderX 打包后的Android系统安装文件。
